@@ -1,0 +1,389 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h1{
+
+}
+iframe{
+    width: 100%;
+    height: 100%;
+}
+h2{
+padding: 30px 0;
+font-family: 'Merriweather', serif;
+font-weight: 400;
+}
+h3{
+
+}
+h5{
+    font-weight: 400;
+    font-size: .95rem !important;
+    font-family: 'Merriweather', serif;
+}
+del{
+text-decoration-style: double;
+}
+
+p{
+    padding: 5% 0;
+    letter-spacing: 1px;
+    color: #6e6b6b;
+    line-height: 2;
+    font-size: .9rem;
+    font-family: 'Merriweather', serif;
+}
+.paragraph{
+    display: block;
+    margin: 2% 0;
+}
+.navbar-brand{
+    font-size: 2rem !important;
+    font-weight: 900;
+    font-family: 'Yellowtail', cursive;
+}
+.brand-break{
+    display: block;
+    font-size: .75rem;
+    font-style: italic;
+    font-weight: lighter;
+    color: #db6400;
+    font-family: 'Merriweather', serif;
+}
+.brand-break:hover{
+    color:#fff;
+}
+nav a{
+    letter-spacing: 2px;
+    transition: all;
+    transition-timing-function: ease-in-out;
+    transition-duration: .5s;
+    font-family: 'Merriweather', serif;
+}
+nav a:hover{
+    color: #bbbbbb;
+}
+.nav-link:hover{
+    border-bottom: 3px solid#db6400;
+}
+.navigation{
+    padding: 10px 5% !important;
+    background-color: #000000;
+    width: 100% !important;
+}
+.section-about, .section-pet, .section-serve, .section-1{
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: 5s;
+}
+.section-about{
+    background-image: url("Images/back2.png");
+}
+.section-pet{
+    background-image: url("Images/back4.jpg");
+}
+.section-serve{
+    background-image: url("Images/back1.png");
+}
+.section-1{
+    /* background-color: rgb(43, 31, 31); */
+    background-image: url("Images/back1.png");
+    
+    animation-name: animate;
+    animation-direction: alternate-reverse;
+    animation-duration: 30s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+}
+
+    @keyframes animate {
+        0%{
+            background-image:url("Images/back1.png");
+        }20%{
+            background-image:url("Images/back3.jpg");
+        }40%{
+            background-image:url("Images/back4.jpg");
+        }60%{
+            background-image:url("Images/back5.jpg");
+        }80%{
+            background-image:url("Images/back2.jpg");
+        }100%{
+            background-image:url("Images/back6.jpg");
+        }
+        
+    }
+
+.navigation a, .section-1{
+    color: #fff;
+}
+.mid-sect{
+    background-color: #1f1709;
+    padding: 8% 0;
+}
+.header-cont{
+    display: flex;
+    width: 85%;
+    margin: 0 auto;
+}
+.header-cont h1{
+    color: #fff;
+}
+
+.button{
+    color: #000000;
+    padding: 3% 10%;
+    border-radius: 100px;
+    border-style: none;
+    background-color: #db6400;
+    transition: all;
+    font-weight: 500;
+    font-size: 1.2rem;
+    font-family: 'Merriweather', serif;
+    transition-duration: .8s;
+    transition-timing-function: ease-in-out;
+}
+.button:hover{
+    background-color: black;
+    color: #fff;
+    font-size: 1.025rem;
+}
+
+/* SECTION 2 */
+.section2{
+    background-color: #fcf8e8;
+    padding: 7% 0;
+}
+.about{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+}
+.about-img, .about-content{
+    margin: 0 5%;
+}
+
+/* SECTION 3 */
+.section3{
+    background-color: #eeeeee;
+    padding: 7% 0;
+    text-align: center;
+}
+.section3 h5{
+    padding: 4% 0;
+}
+.breed-h2{
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 3%;
+}
+.dogName{
+    font-size: 1.3rem;
+}
+.breed-cont{
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+}
+.breed-cont div {
+    width: 100%;
+    margin: 0 2%;
+    background-color: #f4f4f2;
+    border-radius: 8px;
+    padding: 3%;
+}
+.button2{
+    color: #000000;
+    padding: 3% 12%;
+    border-radius: 100px;
+    border-style: none;
+    border: 2px solid #db6400;
+    transition: all;
+    background-color: #fff;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    font-family: 'Merriweather', serif;
+    font-size: .95rem;
+    transition-duration: .2s;
+    transition-timing-function: ease-in-out;
+}
+.button2:hover{
+    font-size: 1rem;
+    background-color:  #db6400;
+}
+.section3 .button{
+    margin: 3% 0;
+}
+
+/* SECTION 4 */
+.section4{
+    padding: 7% 0;
+}
+.service{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+.serve{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.serve1{
+    display: none;
+}
+.serve-icon{
+    text-align: center;
+    margin:20px 30px;
+}
+.serve-icon i {
+    color: #db6400;
+    margin: 10px 0;
+    padding: 2% 0;
+}
+/* OUR SERVICES */
+.service-sect{
+    text-align: center;
+    background-color: #eeeeee;
+    padding: 5% 0;
+}
+.service-sect h2{
+    text-transform: uppercase;
+    color: #db6400;
+}
+.serve-main{
+    display: flex;
+    width: 85%;
+    margin: 4% auto;
+}
+.serve-div{
+    margin: 4% 50px;
+    width: 500px;
+    background-color: #e8eae6;
+}
+.serve-div p{
+    padding: 4% 10%;
+}
+.serve-div img{
+    /* border-radius: 100%; */
+    margin-bottom: 30px;
+    width: 100%;
+}
+.hr-left, .hr-right{
+    border-style: none;
+    border-radius: 40px;
+    border-bottom: 8px solid #db6400;
+    width: 10%;
+    position: relative;
+}
+.hr-left{
+    left: 35%;
+}
+.hr-right{
+    left: 55%;
+}
+/* FOOTER */
+footer{
+    background-color:  rgb(43, 31, 31);
+    padding: 4% 0;
+}
+.footer-div{
+    display: flex;
+    color: #fff;
+    width: 80%;
+    margin: 0 auto;
+}
+.footer-cont{
+    margin: 0 20px;
+}
+.footer-cont a{
+   text-decoration: none;
+   color: #fff;
+}
+.footer-cont a:hover{
+    text-decoration: none;
+    color: #db6400;
+}
+.footer-cont h5{
+    padding-bottom: 2%;
+}
+.footer-cont img{
+width: 80%;
+}
+.social{
+    margin-right: 10px;
+}
+.copyright{
+    text-align: center;
+    color: #eeeeee;
+    background-color: black;
+    padding: 2%;
+    font-style: italic;
+}
+.copyright h6{
+    font-size: .85rem;
+    font-weight: lighter;
+    letter-spacing: 2px;
+}
+.copyright a{
+    text-decoration: none;
+    color: #6e6b6b
+}
+.copyright a:hover{
+    text-decoration: none;
+    color: #fff;
+}
+
+/* ABOUT */
+.about-sect{
+    background-image: url("Images/dog5.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100%;
+}
+.sect-about{
+    background-color: #e8eae6;
+    padding: 4% 0;
+}
+.about-sect2{
+    width: 50%;
+    margin: 0 auto;
+}
+.about-main{
+    background-color: #db6400;
+    padding: 2% 5%;
+    text-align: center;
+    font-style: italic;
+    opacity: 0.5;
+    color: #000000;
+}
+.about-h1, .about-h2{
+    color: #000000;
+}
+.about-img-div{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+}
+.about-img2{
+    border-radius: 100%;
+    width: 20%;
+    margin: 0 10px;
+}
+/* PET */
+.pet-header{
+    text-align: center;
+    padding: 5% 0;
+}
+.breed-cont{
+    margin: 50px auto;
+}
